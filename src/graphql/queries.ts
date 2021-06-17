@@ -12,3 +12,15 @@ export const GET_PAGES = gql`
     }
   }
 `
+export const GET_PAGES_BY_SLUG = gql`
+  query getPagesBySlug($slug: String!) {
+    page(where: { slug: $slug }) {
+      id
+      slug
+      heading
+      body {
+        html
+      }
+    }
+  }
+`
