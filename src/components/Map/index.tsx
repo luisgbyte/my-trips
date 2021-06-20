@@ -44,6 +44,7 @@ const Map = ({ places }: MapProps) => {
         center={[0, 0]}
         zoom={2}
         style={{ height: '100%', width: '100%' }}
+        minZoom={2}
       >
         <CustomTileLayer />
 
